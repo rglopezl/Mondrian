@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+    /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+    */
+    body{
+      display: flex;
+      justify-content: center;
+      height: 100vh;
+      align-items: center;
+    }
+    .conta{
+      display: grid;
+      background-color: black;
+      width: 748px;
+      height: 746px;
+      grid-template-columns: 320px 198px 153px 50px;
+      grid-template-rows: 414px 130px 155px 20px;
+      gap: 9px;
+    }
+
+    .re{
+      background-color:#E72F24 ;
+      grid-column: 1/2;
+
+    }
+
+    .w1{
+      background-color: #F0F1EC;
+      grid-column: 2/5;
+    }
+
+    .w2{
+      background-color: #F0F1EC;
+      grid-column: 1/2;
+      grid-row:2/4;
+    }
+    
+    .w3{
+      background-color: #F0F1EC;
+      grid-column: 2/4;
+      grid-row: 2/4;
+
+    }
+
+    .blu{
+      background-color: #004592;
+      grid-column: 4/5;
+      grid-row: 2/3;
+      border-bottom: 10px solid black;
+    }
+
+    .w4{
+      background-color: #F0F1EC ;
+      grid-column: 1/2;
+      grid-row: 4/5;
+    }
+
+    .yel{
+      background-color: #F9D01E;
+      grid-column: 2/3;
+      grid-row: 4/5;
+    }
+
+    .gre{
+      background-color:#232629 ;
+      grid-column: 3/4;
+      grid-row: 4/5;
+    }
+
+    .w5{
+      background-color: #F0F1EC;
+      grid-column: 4/5;
+      grid-row: 3/5;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Write your HTML here -->
+  <div class="conta">
+    <div class="re"></div>
+    <div class="w1"></div>
+    <div class="w2"></div>
+    <div class="w3"></div>
+    <div class="blu"></div>
+    <div class="w4"></div>
+    <div class="yel"></div>
+    <div class="gre"></div>
+    <div class="w5"></div>
+  </div>
+</body>
+
+</html>
